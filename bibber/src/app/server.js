@@ -5,7 +5,7 @@ const express = require("express");
 const app = express();
 
 // Serve static build files from the "dist" directory
-app.use(express.static(""));
+app.use(express.static("./dist/bibber"));
 
 // Route incoming server requests to the correct files
 app.get("/*", (req, res) =>
